@@ -20,7 +20,7 @@ function saveReview(newReview, arrayOfReviews) {
   
    if (arrayOfReviews.includes(newReview)) {
     delete newReview;
-   } else {
+    } else {
     arrayOfReviews.push(newReview);
    }
  
