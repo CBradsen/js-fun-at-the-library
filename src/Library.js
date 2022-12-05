@@ -19,10 +19,13 @@ function checkoutBook(library, book, genreShelf) {
   //using: fantasy, fiction or nonFiction
 //var checkedOut = [];
   for (var i = 0; i < genreShelf.length; i++) {
-    if (genreShelf.title === book) {
-        checkedOut.push(book);
-    }
-   // console.log(checkedOut);
+    if (genreShelf[i][book.genre] === book) {
+      
+      genreShelf.splice(i, 1);
+      
+      //checkedOut += genreShelf.book
+    } // console.log("You have now checked out Pride and Prejudice from the Denver Public Library")  
+  // console.log(checkedOut);
   }
 
 }
